@@ -7,7 +7,7 @@ import dalleRoutes from './routes/dalle.routes.js';
 dotenv.config();
 
 const corsOptions ={
-  origin:'https://3d-clothing-demo-eexw.vercel.app/', 
+  origin:'https://3d-clothing-demo-eexw.vercel.app', 
   credentials:true,            //access-control-allow-credentials:true
   optionSuccessStatus:200,
 }

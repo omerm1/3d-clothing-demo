@@ -55,6 +55,7 @@ const Customizer = () => {
 
       const response = await fetch('https://threed-clothing-demo.onrender.com/api/v1/dalle', {
         method: 'POST',
+        mode: 'no-cors',
         headers: {
           'Content-Type': 'application/json'
         },

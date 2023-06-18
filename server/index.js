@@ -6,9 +6,12 @@ import dalleRoutes from './routes/dalle.routes.js';
 
 dotenv.config();
 
+var corsOptions = {
+  origin: 'https://3d-clothing-demo.vercel.app/'
+};
 
 const app = express();
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json({ limit: "50mb" }))
 
 app.use("/api/v1/dalle", dalleRoutes);
